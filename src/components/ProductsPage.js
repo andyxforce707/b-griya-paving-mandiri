@@ -29,7 +29,7 @@ const ProductsPage = () => {
         />
       </div>
 
-      <div className="products">
+      <div className={`products ${filteredData.length == 0 ? 'no' : null}` }>
         {/* kondisional rendering, jika data kosong, tampilkan pesan tidak ada data! */}
         {filteredData.length == 0 ? <h3 className="no_data">Produk tidak ditemukan!</h3> : filteredData.map((val) => (
           <div className="product" key={val.id}>
