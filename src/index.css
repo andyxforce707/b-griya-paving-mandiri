@@ -889,9 +889,8 @@ body {
 
   .footer {
     width: 100%;
-    padding: 20px 25px 35px;
+    padding: 20px 25px;
     background: linear-gradient(to right, darkred, red);
-    /* position: fixed; */
     bottom: 0;
     left: 0;
     display: flex;
@@ -915,8 +914,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-        margin-top: 25px;
-
+    margin-top: 25px;
   }
 
   .footer .text p {
