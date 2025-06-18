@@ -35,7 +35,7 @@ const ProductsPage = () => {
           <div className="product" key={val.id}>
             <img className="gambar_product" src={require(`../product_images/${val.gambar}`)} alt="" />
             <p>{val.nama.toLocaleUpperCase()}</p>
-            <small>Rp. {val.harga.toLocaleString()},-</small>
+            <small style={{display:none}}>Rp. {val.harga.toLocaleString()},-</small>
             <div className="buttons">
               <Link to={`/product/${val.id}`} className="detail">
                 Detail
