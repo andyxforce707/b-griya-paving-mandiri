@@ -53,8 +53,8 @@ const ProductDetailPage = () => {
             <p>
               Uji Desak : <i>{filteredProduct[0].ujiDesak}</i>
             </p>
-            <p style={{display:none}}>
-              Harga : <i style={{display:none}}>Rp. {filteredProduct[0].harga.toLocaleString()},-</i>
+            <p style={{display:'none'}}>
+              Harga : <i style={{display:'none'}}>Rp. {filteredProduct[0].harga.toLocaleString()},-</i>
             </p>
 
             <div>
