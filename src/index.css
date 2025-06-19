@@ -609,7 +609,7 @@ body {
 }
 
 .about_title {
-  margin-top: 75px;
+  margin-top: 5px;
   color: red;
   margin-bottom: 10px;
   border-bottom: 1px solid rgba(253, 0, 0, 0.536);
@@ -1165,6 +1165,15 @@ body {
 /* Portfolios End */
 
 /* About */
+
+.about_title {
+  margin-top: 75px;
+  color: red;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(253, 0, 0, 0.536);
+  padding-bottom: 10px;
+}
+
   .about_title {
     font-size: 25px;
   }
@@ -1264,4 +1273,15 @@ body {
     place-items: center;
 }
 /* Product end */
+
+/* about */
+
+.about_title {
+  margin-top: 60px;
+  color: red;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(253, 0, 0, 0.536);
+  padding-bottom: 10px;
+}
+/* about end */
 }
