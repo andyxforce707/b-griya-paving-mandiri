@@ -25,17 +25,17 @@ const HomePage = () => {
       </div>
 
       <div className="spesial">
-        <motion.div className="spesial_card" initial={{opacity:0,translateX:'-100%'}} whileInView={{opacity:1,translateX:'0%'}} transition={{duration:1}}>
+        <motion.div className="spesial_card" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1}}>
           <img src={require(`../icons/icon-earth.png`)} className="icon" alt="" />
           <b>Pengiriman</b>
           <small>Cepat sampai, aman dan terkendali!</small>
         </motion.div>
-        <motion.div className="spesial_card" initial={{opacity:0,translateY:'100%'}} whileInView={{opacity:1,translateY:'0%'}} transition={{duration:0.35}}>
+        <motion.div className="spesial_card" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.35}}>
           <img src={require(`../icons/icon-chart.png`)} className="icon chart" alt="" />
           <b>Harga</b>
           <small>GPM menyediakan produk paving dengan harga yang terjangkau.</small>
         </motion.div>
-        <motion.div className="spesial_card" initial={{opacity:0,translateX:'100%'}} whileInView={{opacity:1,translateX:'0%'}} transition={{duration:1}}>
+        <motion.div className="spesial_card" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1}}>
           <img src={require(`../icons/icon-help.png`)} className="icon" alt="" />
           <b>Pelayanan</b>
           <small>Sepenuh hati, ramah dan bersahabat!</small>
