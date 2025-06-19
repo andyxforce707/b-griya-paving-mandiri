@@ -600,7 +600,7 @@ body {
 
 .about {
   width: 100%;
-  padding: 25px 25px;
+  padding: 25px 100px;
   padding-bottom: 10px;
   display: flex;
   gap: 10px;
@@ -1166,6 +1166,16 @@ body {
 
 /* About */
 
+.about {
+  width: 100%;
+  padding: 25px 25px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 75px;
+}
+
 .about_title {
   margin-top: 75px;
   color: red;
@@ -1275,6 +1285,16 @@ body {
 /* Product end */
 
 /* about */
+
+.about {
+  width: 100%;
+  padding: 25px 25px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 75px;
+}
 
 .about_title {
   margin-top: 60px;
