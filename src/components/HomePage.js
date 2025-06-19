@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
       <div className="home">
-        <motion.div className="home_left" initial={{opacity:0,translateX:'-100%'}} whileInView={{opacity:1,translateX:'0%'}} transition={{duration:1}}>
+        <motion.div className="home_left" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1}}>
           <h3>CV. GRIYA PAVING MANDIRI</h3>
           <span>PRODUSEN PAVING BLOCK | SPESIALIS PEMASANGAN | KONSULTASI</span>
           <i>"Think Less, Build More!"</i>
@@ -14,7 +14,7 @@ const HomePage = () => {
           </a>
         </motion.div>
         <div className="home_right">
-          <motion.img src={require(`../gpm/gpm2.png`)} className="logo" alt="" initial={{opacity:0,translateX:'100%'}} whileInView={{opacity:1,translateX:'0%'}} transition={{duration:0.75}}/>
+          <motion.img src={require(`../gpm/gpm2.png`)} className="logo" alt="" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.75}}/>
         </div>
       </div>
 
