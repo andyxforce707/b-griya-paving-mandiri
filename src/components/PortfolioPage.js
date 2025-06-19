@@ -1,6 +1,9 @@
 // import const portfolios 
 import {portfolios} from '../products/products';
 
+//framer-motion 
+import {motion} from 'framer-motion';
+
 const PortfolioPage = () => {
     return (
         <>
@@ -9,9 +12,9 @@ const PortfolioPage = () => {
         <div className="portfolios">
             {portfolios.map((val)=>{
                 return (
-            <div className="card_portfolio">
+            <motion.div className="card_portfolio" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1}}>
                 <img className="image" src={require(`../portfolio_images/${val.nama}`)}/>
-            </div>
+            </motion.div>
                 )
             })}
 
