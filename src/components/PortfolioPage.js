@@ -14,7 +14,7 @@ const PortfolioPage = () => {
         <div className="portfolios">
             {portfolios.map((val)=>{
                 return (
-            <motion.div className="card_portfolio" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1}}>
+            <motion.div className="card_portfolio" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5}}>
                 <img className="image" src={require(`../portfolio_images/${val.nama}`)}/>
             </motion.div>
                 )

@@ -1,44 +1,45 @@
 import { Link } from 'react-router';
+import {motion} from 'framer-motion';
 
 const HomePage = () => {
   return (
     <>
       <div className="home">
-        <div className="home_left">
+        <motion.div className="home_left" initial={{opacity:0,translateX:'-100%'}} whileInView={{opacity:1,translateX:'0%'}} transition={{duration:1}}>
           <h3>CV. GRIYA PAVING MANDIRI</h3>
           <span>PRODUSEN PAVING BLOCK | SPESIALIS PEMASANGAN | KONSULTASI</span>
           <i>"Think Less, Build More!"</i>
           <a className="contact_us" target="_blank" href="https://wa.me/6288294400642?text=Hai, boleh bagi info lebih lanjut mengenai pavingnya ? _Saya : , Kota :_ ">
             <span>Contact Us</span>
           </a>
-        </div>
+        </motion.div>
         <div className="home_right">
-          <img src={require(`../gpm/gpm2.png`)} className="logo" alt="" />
+          <motion.img src={require(`../gpm/gpm2.png`)} className="logo" alt="" initial={{opacity:0,translateX:'100%'}} whileInView={{opacity:1,translateX:'0%'}} transition={{duration:0.75}}/>
         </div>
       </div>
 
       <div className="opening">
-        <p>
+        <motion.p initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2}}>
           <span>CV. Griya Paving Mandiri</span> adalah perusahaan pembuatan paving block, kansteen, dan bataco yang berdiri sejak 2016. Alhamdulillah telah banyak kontraktor pemerintahan dan swasta yang bekerjasama dengan kami untuk memenuhi kebutuhan proyek mereka. Kami senantiasa berikhtiar mengedepankan kualitas produk dan ketepatan waktu dalam pengiriman.
-        </p>
+        </motion.p>
       </div>
 
       <div className="spesial">
-        <div className="spesial_card">
+        <motion.div className="spesial_card" initial={{opacity:0,translateX:'-100%'}} whileInView={{opacity:1,translateX:'0%'}} transition={{duration:1}}>
           <img src={require(`../icons/icon-earth.png`)} className="icon" alt="" />
           <b>Pengiriman</b>
           <small>Cepat sampai, aman dan terkendali!</small>
-        </div>
-        <div className="spesial_card">
+        </motion.div>
+        <motion.div className="spesial_card" initial={{opacity:0,translateY:'100%'}} whileInView={{opacity:1,translateY:'0%'}} transition={{duration:0.35}}>
           <img src={require(`../icons/icon-chart.png`)} className="icon chart" alt="" />
           <b>Harga</b>
           <small>GPM menyediakan produk paving dengan harga yang terjangkau.</small>
-        </div>
-        <div className="spesial_card">
+        </motion.div>
+        <motion.div className="spesial_card" initial={{opacity:0,translateX:'100%'}} whileInView={{opacity:1,translateX:'0%'}} transition={{duration:1}}>
           <img src={require(`../icons/icon-help.png`)} className="icon" alt="" />
           <b>Pelayanan</b>
           <small>Sepenuh hati, ramah dan bersahabat!</small>
-        </div>
+        </motion.div>
       </div>
 
 

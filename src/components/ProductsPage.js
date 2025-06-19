@@ -35,7 +35,7 @@ const ProductsPage = () => {
       <div className={`products ${filteredData.length == 0 ? 'no' : null}` }>
         {/* kondisional rendering, jika data kosong, tampilkan pesan tidak ada data! */}
         {filteredData.length == 0 ? <h3 className="no_data">Produk tidak ditemukan!</h3> : filteredData.map((val) => (
-          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1.5}} className="product" key={val.id}>
+          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5}} className="product" key={val.id}>
             <img className="gambar_product" src={require(`../product_images/${val.gambar}`)} alt="" />
             <p>{val.nama.toLocaleUpperCase()}</p>
             <small style={{display:'none'}}>Rp. {val.harga.toLocaleString()},-</small>
